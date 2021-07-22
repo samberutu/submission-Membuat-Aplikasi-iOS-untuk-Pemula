@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sFq-0i-Qct">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Credit Page Controller-->
+        <scene sceneID="QfD-6q-USm">
+            <objects>
+                <viewController id="sFq-0i-Qct" customClass="CreditPageController" customModule="RestaurantApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yGu-xu-yDe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xl2-M4-BVI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lK3-Ys-xBx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xl2-M4-BVI" firstAttribute="leading" secondItem="lK3-Ys-xBx" secondAttribute="leading" id="2AO-G6-Lyf"/>
+                            <constraint firstItem="Xl2-M4-BVI" firstAttribute="top" secondItem="lK3-Ys-xBx" secondAttribute="top" id="OvC-OU-MbG"/>
+                            <constraint firstItem="lK3-Ys-xBx" firstAttribute="bottom" secondItem="Xl2-M4-BVI" secondAttribute="bottom" id="TdD-tA-Wvh"/>
+                            <constraint firstItem="lK3-Ys-xBx" firstAttribute="trailing" secondItem="Xl2-M4-BVI" secondAttribute="trailing" id="iSp-jf-fB0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lu7-Dk-tse"/>
+                    <connections>
+                        <outlet property="creditTable" destination="Xl2-M4-BVI" id="d0E-X5-VoA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5TY-Dx-HAv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3272" y="318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

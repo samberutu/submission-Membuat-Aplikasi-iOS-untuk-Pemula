@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tdn-z0-zH5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="lqG-1B-vel">
+            <objects>
+                <viewController id="qfl-Hw-2nZ" customClass="DeveloperProfileController" customModule="RestaurantApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5lf-Uj-DSn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="samlo" translatesAutoresizingMaskIntoConstraints="NO" id="NBJ-yC-5wG">
+                                <rect key="frame" x="107" y="172" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="6k2-T0-cow"/>
+                                    <constraint firstAttribute="width" constant="200" id="a15-bV-buQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQ1-bU-0BB">
+                                <rect key="frame" x="0.0" y="388" width="414" height="425"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samlo Berutu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwq-Pq-NkZ">
+                                        <rect key="frame" x="131.5" y="16" width="151" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="samlo.14117132@student.itera.ac.id" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nv-r8-JdD">
+                                        <rect key="frame" x="59" y="61" width="296" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zX8-iR-XhT">
+                                        <rect key="frame" x="131.5" y="186.5" width="151" height="52"/>
+                                        <color key="backgroundColor" red="0.88742941620000004" green="0.32204580310000003" blue="0.32939013839999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="25" minY="15" maxX="25" maxY="15"/>
+                                        <state key="normal" title="Credit Page">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="creditButton:" destination="qfl-Hw-2nZ" eventType="touchUpInside" id="LTf-Sp-T4Q"/>
+                                            <segue destination="A2l-sp-4xe" kind="show" id="WqJ-rE-PRH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zX8-iR-XhT" firstAttribute="centerX" secondItem="mQ1-bU-0BB" secondAttribute="centerX" id="2Bx-oB-rUn"/>
+                                    <constraint firstItem="3nv-r8-JdD" firstAttribute="top" secondItem="pwq-Pq-NkZ" secondAttribute="bottom" constant="16" id="TrI-JY-DLL"/>
+                                    <constraint firstItem="3nv-r8-JdD" firstAttribute="centerX" secondItem="mQ1-bU-0BB" secondAttribute="centerX" id="XD1-x6-vmy"/>
+                                    <constraint firstItem="zX8-iR-XhT" firstAttribute="centerY" secondItem="mQ1-bU-0BB" secondAttribute="centerY" id="cBx-4O-4xy"/>
+                                    <constraint firstItem="pwq-Pq-NkZ" firstAttribute="centerX" secondItem="mQ1-bU-0BB" secondAttribute="centerX" id="mqx-a7-5aI"/>
+                                    <constraint firstItem="pwq-Pq-NkZ" firstAttribute="top" secondItem="mQ1-bU-0BB" secondAttribute="top" constant="16" id="vDb-EC-MEX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oiu-3T-tgA"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oiu-3T-tgA" firstAttribute="bottom" secondItem="mQ1-bU-0BB" secondAttribute="bottom" id="Akd-DC-rQa"/>
+                            <constraint firstItem="NBJ-yC-5wG" firstAttribute="centerX" secondItem="5lf-Uj-DSn" secondAttribute="centerX" id="DMW-Y9-dtc"/>
+                            <constraint firstItem="mQ1-bU-0BB" firstAttribute="leading" secondItem="oiu-3T-tgA" secondAttribute="leading" id="DQX-7G-e4c"/>
+                            <constraint firstItem="NBJ-yC-5wG" firstAttribute="top" secondItem="oiu-3T-tgA" secondAttribute="top" constant="32" id="Ei5-XZ-JFU"/>
+                            <constraint firstItem="mQ1-bU-0BB" firstAttribute="top" secondItem="NBJ-yC-5wG" secondAttribute="bottom" constant="16" id="L8E-uj-gOi"/>
+                            <constraint firstItem="mQ1-bU-0BB" firstAttribute="trailing" secondItem="oiu-3T-tgA" secondAttribute="trailing" id="dnc-nw-dOV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="h7w-CX-hNY"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="creditBtn" destination="zX8-iR-XhT" id="2aC-As-4T7"/>
+                        <outlet property="mainViewBiodata" destination="mQ1-bU-0BB" id="JOM-qy-AM0"/>
+                        <outlet property="profileImg" destination="NBJ-yC-5wG" id="Nlx-Qz-zLJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjG-ef-bsA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2382.608695652174" y="313.39285714285711"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="cjc-yV-4sE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tdn-z0-zH5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="fS3-dq-IZH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="6nT-Ep-eSS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qfl-Hw-2nZ" kind="relationship" relationship="rootViewController" id="yCW-T2-wNA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="keB-i4-ZdK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472.4637681159422" y="313.39285714285711"/>
+        </scene>
+        <!--CreditPage-->
+        <scene sceneID="aYg-Ty-6ww">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreditPage" id="A2l-sp-4xe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XPI-Bm-I5k"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kb-3m-bUn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3272" y="318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="samlo" width="1695" height="1469"/>
+    </resources>
+</document>

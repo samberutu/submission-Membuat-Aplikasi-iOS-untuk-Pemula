@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="opM-DH-AVZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorite-->
+        <scene sceneID="epe-dp-RzN">
+            <objects>
+                <viewController id="zv4-a6-GuV" customClass="RestorantFavoriteController" customModule="RestaurantApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eL0-tY-tAZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-gR-yFA">
+                                <rect key="frame" x="20" y="140" width="374" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tg7-vP-wMs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cbI-gR-yFA" firstAttribute="leading" secondItem="tg7-vP-wMs" secondAttribute="leading" constant="20" id="BQc-R6-238"/>
+                            <constraint firstItem="tg7-vP-wMs" firstAttribute="trailing" secondItem="cbI-gR-yFA" secondAttribute="trailing" constant="20" id="Ffq-qV-tPV"/>
+                            <constraint firstItem="cbI-gR-yFA" firstAttribute="top" secondItem="tg7-vP-wMs" secondAttribute="top" id="erf-d1-Pzt"/>
+                            <constraint firstItem="tg7-vP-wMs" firstAttribute="bottom" secondItem="cbI-gR-yFA" secondAttribute="bottom" id="yg2-Ly-48C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Favorite" id="01q-Sa-ncT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="favoriteRestaurantTable" destination="cbI-gR-yFA" id="b6u-8k-iOG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewH-sI-3LU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2163.768115942029" y="271.875"/>
+        </scene>
+        <!--RestaurantDetail-->
+        <scene sceneID="HCC-N5-HhF">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RestaurantDetail" storyboardName="RestaurantDetail" id="ZA0-dW-t13" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OdY-F1-585"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B5D-uk-0jL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3006" y="263"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="f1c-gd-q2b">
+            <objects>
+                <navigationController storyboardIdentifier="favorite" automaticallyAdjustsScrollViewInsets="NO" id="opM-DH-AVZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorite" image="heart" catalog="system" id="EAg-7y-WHi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="aK0-dE-i7x">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zv4-a6-GuV" kind="relationship" relationship="rootViewController" id="WQ0-eP-MPs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="evr-wA-2ya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253.6231884057972" y="271.875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
